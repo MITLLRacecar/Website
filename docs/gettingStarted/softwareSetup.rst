@@ -9,14 +9,16 @@ This page will walk you through the steps needed to set up the operating system 
 Image Setup
 ===========
 
-1. Download the latest version of the `image file <https://drive.google.com/file/d/1-lZG6-b2K31IbdI06H09gW9dbBaEcgba/view?usp=sharing>`_.
-2. Unzip the file (the extension should be ``.img`` not ``.zip``).
+1. Download the latest version of the `image file <https://drive.google.com/file/d/1IHVibBQPwZXG4859diX54QEqpK2CyXrO/view?usp=sharing>`_.
+2. Unzip the file (the extension should be ``.img`` not ``.gz``).
 3. Find a computer that has an SD port, and plug in the micro-SD card in the SD adapter.
 
 The operating system of your computer has will determine your next steps.
 
 Linux
 """""
+
+(These instructions have not been recently tested.)
 
 1. Find the device name for your SD card. This can be done by using the ``lsblk`` command before and after plugging in the SD card; the new device is the card. It will look something like ``/dev/name``.
 2. Unmount it with ``umount /dev/name_of_sd``.
@@ -26,10 +28,7 @@ Linux
 Mac
 """
 
-1. Find the device name of your SD card with ``diskutil list``. It should be labeled with the ``(external, physical)`` tag. The name will look something like ``/dev/name``.
-2. Unmount it with ``diskutil unmountDisk /dev/name_of_sd``.
-3. Open a terminal and navigate to the folder containing your image (it is probably in downloads, so on a fresh terminal ``cd Downloads`` should work).
-4. Finally, begin the copy process with ``sudo dd bs=1M if=name_of_image.img of=/dev/name_of_sd status=progress; sync``. The image is 128 GB.
+Follow instructions `here <https://docs.google.com/document/d/1M99XklgR7pGS7_aW9fb94www9bNnznq7wxQn7z4suWw/edit#bookmark=id.54lelevfrxsl>`_.
 
 Windows
 """""""
