@@ -184,8 +184,8 @@ Hardware
 | |zipTies|                                                 | | **Zip ties**                                  |
 |                                                           | | Secures cables                                |
 +-----------------------------------------------------------+-------------------------------------------------+
-| |spring|                                                  | | **Speaker**                                   |
-|                                                           | | Produces sound                                |
+| |spring|                                                  | | **Spring**                                    |
+|                                                           | | Absorbs shock, stores and releases energy     |
 +-----------------------------------------------------------+-------------------------------------------------+
 | |cornerBracket|                                           | | **Corner bracket**                            |
 |                                                           | | Secures the Monitor                           |
