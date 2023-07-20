@@ -32,8 +32,24 @@ Follow instructions `here <https://docs.google.com/document/d/1M99XklgR7pGS7_aW9
 
 Windows
 """""""
-(This section has not been completed yet).
+<Please test>
 
+Here are the steps for copying an image to an SD card in Windows using Git Bash:
+
+1. Insert the SD card into your computer's SD card reader and make note of the assigned drive letter (e.g. D:, E:, etc.)
+2. Download the Win32DiskImager utility from the official website: [https://sourceforge.net/projects/win32diskimager/  ↗]
+3. Install Git Bash if you haven't already done so: [https://git-scm.com/downloads  ↗]
+4. Open Git Bash as an administrator (right-click on the application and select "Run as administrator")
+5. Navigate to the folder containing your image using the `cd` command (e.g. `cd Downloads` if the image is in the Downloads folder)
+6. Run the following command to copy the image to the SD card: `dd if=name_of_image.img of=/dev/name_of_sd bs=4M`
+   - Replace `name_of_image.img` with the filename of your image file
+   - Replace `name_of_sd` with the device name of your SD card (e.g. `/dev/sdb`)
+   - The `bs=4M` option sets the block size to 4MB, which can improve performance
+7. Wait for the copying process to complete. This may take some time, depending on the size of the image and the write speed of your SD card.
+8. When the process is complete, you should see a message indicating how much data was copied and how long it took.
+9. Eject the SD card from your computer and you're done!
+
+Note: The `dd` command is a powerful tool that can overwrite any drive connected to your computer, so be very careful when selecting the device name. Make sure you have selected the correct device before running the `dd` command.
 
 ============
 Router Setup
